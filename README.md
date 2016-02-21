@@ -1,7 +1,7 @@
 nodejs module for accessing the AATA MicroAPI.
 
 [![Build Status](https://travis-ci.org/akosel/node-aata.svg?branch=master)](https://travis-ci.org/akosel/node-aata)
-
+[![npm version](https://badge.fury.io/js/aata.svg)](https://badge.fury.io/js/aata)
 
 # Install
 ```

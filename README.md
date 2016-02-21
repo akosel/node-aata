@@ -70,10 +70,16 @@ aata.getRouteNames(null, function(err, data) {
 });
 ```
 
+Please see [the wiki](https://github.com/akosel/node-aata/wiki) for more information, such as response payloads.
+
 # Test
 ```
 npm test
 ```
+
+# TODO
+1. Add Python API wrapper (in a separate repository, obviously).
+2. Normalize response schema (for example, instead of using lat, longitude, and lattitude, use the standard lat, lng combo. Also parse lat/lng strings to floating point values).
 
 # License
 MIT: https://opensource.org/licenses/MIT

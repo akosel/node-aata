@@ -18,7 +18,7 @@ var aata = new AATA();
 // Thin wrapper on top of existing AATA MicroAPI: http://www.theride.org/AboutUs/Developer-Resources/Developer-Files
 // Note: All methods accept a route id, which as expected, will return data for only that route.
 
-// Get schedule documents
+// Get schedule documents. See example payload: https://github.com/akosel/node-aata/wiki#get-schedule-documents
 aata.getScheduleDocuments()
   .then(function(data) {
     console.log(data);
@@ -27,7 +27,7 @@ aata.getScheduleDocuments()
     console.error(err);
   });
 
-// Get all stops in the system
+// Get all stops in the system. See example payload: https://github.com/akosel/node-aata/wiki#get-stops-on-route
 aata.getStopsOnRoute()
   .then(function(data) {
     console.log(data);
@@ -36,7 +36,7 @@ aata.getStopsOnRoute()
     console.error(err);
   });
 
-// Get timepoints for stops in the system
+// Get timepoints for stops in the system. See example payload: https://github.com/akosel/node-aata/wiki#get-stop-timepoints
 aata.getStopTimepoints()
   .then(function(data) {
     console.log(data);
@@ -45,7 +45,7 @@ aata.getStopTimepoints()
     console.error(err);
   });
 
-// Get names and IDs for all AATA routes
+// Get names and IDs for all AATA routes. See example payload: https://github.com/akosel/node-aata/wiki#get-route-names
 aata.getRouteNames()
   .then(function(data) {
     console.log(data);
@@ -54,7 +54,7 @@ aata.getRouteNames()
     console.error(err);
   });
 
-// Get names and IDs for all AATA routes
+// Get names and IDs for all AATA routes.  See example payload: https://github.com/akosel/node-aata/wiki#get-bus-locations
 aata.getBusLocations()
   .then(function(data) {
     console.log(data);

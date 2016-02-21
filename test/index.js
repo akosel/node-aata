@@ -3,6 +3,26 @@ import AATA from '../src/';
 
 const aata = new AATA();
 
+test('aata all schedule documents', (t) => {
+  return aata.getScheduleDocuments().then((res) => {
+    t.equal(typeof(res), 'object');
+    t.ok(Array.isArray(res), 'stops are array');
+  })
+  .catch((err) => {
+    t.error(err);
+  });
+});
+
+test('aata schedule documents for route 2', (t) => {
+  return aata.getScheduleDocuments(2).then((res) => {
+    t.equal(typeof(res), 'object');
+    t.ok(Array.isArray(res.htmlLinks), 'stops are array');
+  })
+  .catch((err) => {
+    t.error(err);
+  });
+});
+
 test('aata stops on all routes', (t) => {
   return aata.getStopsOnRoute().then((res) => {
     t.equal(typeof(res), 'object');
@@ -73,7 +93,7 @@ test('aata bus locations on route 8', (t) => {
   });
 });
 
-test('aata bus - callback', (t) => {
+test('aata callback test', (t) => {
   t.plan(3);
   aata.getBusLocations('8', (err, res) => {
     t.error(err);

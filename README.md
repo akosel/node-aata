@@ -18,6 +18,15 @@ var aata = new AATA();
 // Thin wrapper on top of existing AATA MicroAPI: http://www.theride.org/AboutUs/Developer-Resources/Developer-Files
 // Note: All methods accept a route id, which as expected, will return data for only that route.
 
+// Get schedule documents
+aata.getScheduleDocuments()
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(err) {
+    console.error(err);
+  });
+
 // Get all stops in the system
 aata.getStopsOnRoute()
   .then(function(data) {

@@ -31,6 +31,11 @@ class AATA {
     return promise;
   }
 
+  getScheduleDocuments(route, cb) {
+    const resource = route ? 'scheduledocuments/' + route : 'scheduledocuments';
+    return this.get(resource, cb);
+  }
+
   getStopsOnRoute(route, cb) {
     const resource = route ? 'stopsonroute/' + route : 'stopsonroute';
     return this.get(resource, cb);

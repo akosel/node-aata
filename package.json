@@ -1,6 +1,6 @@
 {
   "name": "aata",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Node wrapper around AATA API",
   "main": "./index.js",
   "scripts": {
@@ -16,11 +16,7 @@
   "engines": {
     "node": "> 0.8"
   },
-  "author": {
-    "name": "Aaron Kosel",
-    "email": "aaronjkosel@gmail.com",
-    "url": "http://www.aaronkosel.com/"
-  },
+  "author": "Aaron Kosel",
   "repository": {
     "type": "git",
     "url": "https://github.com/akosel/node-aata.git"
@@ -33,7 +29,6 @@
     "ride",
     "bus"
   ],
-  "author": "Aaron Kosel",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.1.18",
